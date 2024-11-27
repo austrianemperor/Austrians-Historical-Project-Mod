@@ -7,6 +7,10 @@ craftsmen_fix_cooldown = {
     icon = 12
 }
 
+grant_cooldown = {
+    icon = 12
+}
+
 ####AI Personalities
 
 coward_ai = {

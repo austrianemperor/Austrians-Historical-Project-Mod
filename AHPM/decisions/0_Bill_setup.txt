@@ -1,0 +1,41 @@
+political_decisions = {	
+	enable_multiplayer_features = {
+        picture = grants
+        alert = no
+        potential = {
+            ai = no
+            has_country_flag = country_looking_through_options
+            NOT = { has_global_flag = permanently_hide_options }
+            NOT = { has_global_flag = multiplayer_game }
+        }
+
+        allow = {
+        }
+
+        effect = {
+            set_global_flag = multiplayer_game
+        }
+
+        ai_will_do = { factor = 0 }
+    }
+
+    disable_multiplayer_features = {
+        picture = grants
+        alert = no
+        potential = {
+            ai = no
+            has_country_flag = country_looking_through_options
+            NOT = { has_global_flag = permanently_hide_options }
+            has_global_flag = multiplayer_game 
+        }
+
+        allow = {
+        }
+
+        effect = {
+            clr_global_flag = multiplayer_game
+        }
+
+        ai_will_do = { factor = 0 }
+    }
+}
