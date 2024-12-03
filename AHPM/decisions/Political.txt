@@ -673,6 +673,137 @@ political_decisions = {
 
         ai_will_do = { factor = 1 }
     }
+	
+	the_white_terror = {
+        picture = the_red_terror
+        potential = {
+            OR = { government = presidential_dictatorship government = absolute_monarchy }
+            NOT = { has_country_modifier = the_terror }
+            NOT = { has_country_modifier = totalitarian_system }
+			revolution_n_counterrevolution = 1
+        }
+
+        allow = {
+            war = no
+            mass_politics = 1
+			ruling_party_ideology = reactionary
+            invention = secret_police
+            NOT = { num_of_revolts = 1 }
+            NOT = { has_country_modifier = law_changed_by_force }
+        }
+
+        effect = {
+            plurality = -25
+            random = {
+                chance = 50
+                badboy = 1
+            }
+            random = {
+                chance = 50
+                badboy = 1
+            }
+            add_country_modifier = {
+                name = the_terror
+                duration = -1
+            }
+            add_country_modifier = {
+                name = law_changed_by_force
+                duration = 1095
+            }
+            any_pop = { limit = { pop_majority_ideology = communist } random_list = { 50 = { reduce_pop = 0.95 } 50 = { reduce_pop = 0.9 } } }
+            any_pop = { limit = { pop_majority_ideology = anarcho_liberal } reduce_pop = 0.98 }
+            any_pop = { limit = { pop_majority_ideology = socialist } reduce_pop = 0.98 }
+            any_pop = { limit = { pop_majority_ideology = liberal } reduce_pop = 0.98 }
+            any_pop = { limit = { pop_majority_ideology = fascist } reduce_pop = 0.99 }
+            any_pop = {
+                limit = {
+                    OR = {
+                        social_movement = yes
+                        political_movement = yes
+                        }
+                    }
+                militancy = -7
+                random_list = { 50 = { reduce_pop = 0.99 } 50 = { reduce_pop = 0.98 } }
+            }
+
+            any_pop = { limit = { type = officers } reduce_pop = 0.99 }
+
+            any_pop = {
+                limit = {
+                    OR = { type = soldiers type = officers }
+                    NOT = { pop_majority_ideology = reactionary }
+                    }
+                    militancy = -9 ideology = { factor = 0.35 value = reactionary }
+                }
+            any_pop = { ideology = { factor = 0.01 value = reactionary } }
+            any_pop = {
+                scaled_consciousness = {
+                    factor = -9
+                    ideology = reactionary
+                }
+                scaled_militancy = {
+                    factor = -9
+                    ideology = reactionary
+                }
+
+                scaled_consciousness = {
+                    factor = -2
+                    ideology = conservative
+                }
+                scaled_militancy = {
+                    factor = -2
+                    ideology = conservative
+                }
+
+                scaled_consciousness = {
+                    factor = 9
+                    ideology = anarcho_liberal
+                }
+                scaled_militancy = {
+                    factor = 9
+                    ideology = anarcho_liberal
+                }
+
+                scaled_consciousness = {
+                    factor = 7
+                    ideology = liberal
+                }
+                scaled_militancy = {
+                    factor = 7
+                    ideology = liberal
+                }
+
+                scaled_consciousness = {
+                    factor = 3
+                    ideology = fascist
+                }
+                scaled_militancy = {
+                    factor = 3
+                    ideology = fascist
+                }
+
+                scaled_consciousness = {
+                    factor = 7
+                    ideology = socialist
+                }
+                scaled_militancy = {
+                    factor = 7
+                    ideology = socialist
+                }
+
+                scaled_consciousness = {
+                    factor = 9
+                    ideology = communist
+                }
+                scaled_militancy = {
+                    factor = 9
+                    ideology = communist
+                }
+            }
+        }
+
+        ai_will_do = { factor = 1 }
+    }
 
     the_cult_of_personality = {
         picture = switch_to_autocracy
@@ -680,6 +811,13 @@ political_decisions = {
             OR = {
                 government = fascist_dictatorship
                 government = proletarian_dictatorship
+				AND = {
+					OR = {
+						government = presidential_dictatorship
+						government = absolute_monarchy
+					}
+					ruling_party_ideology = reactionary
+				}
             }
             NOT = { has_country_modifier = cult_of_personality }
             NOT = { has_country_modifier = totalitarian_system }
@@ -771,6 +909,49 @@ political_decisions = {
 
         ai_will_do = { factor = 1 }
     }
+	
+    ideological_indoctrination_reactionary = {
+        picture = indoctrinal_education
+        potential = {
+            OR = { 
+				government = presidential_dictatorship 
+				government = absolute_monarchy 
+				AND = {
+					OR = {
+						government = presidential_dictatorship
+						government = absolute_monarchy
+					}
+					ruling_party_ideology = reactionary
+				}
+			}
+            revolution_n_counterrevolution = 1
+            NOT = { has_country_modifier = political_education }
+            NOT = { has_country_modifier = totalitarian_system }
+        }
+
+        allow = {
+            war = no
+            mass_politics = 1
+            NOT = { num_of_revolts = 1 }
+            NOT = { has_country_modifier = law_changed_by_force }
+            NOT = { school_reforms = no_schools }
+        }
+
+        effect = {
+            plurality = -25
+            add_country_modifier = {
+                name = political_education
+                duration = -1
+            }
+            add_country_modifier = {
+                name = law_changed_by_force
+                duration = 1095
+            }
+            any_pop = { ideology = { factor = 0.1 value = reactionary } }
+        }
+
+        ai_will_do = { factor = 1 }
+    }
 
     the_totalitarian_regime = {
         picture = mussolini_hq
@@ -778,6 +959,13 @@ political_decisions = {
             OR = {
                 government = fascist_dictatorship
                 government = proletarian_dictatorship
+				AND = {
+					OR = {
+						government = presidential_dictatorship
+						government = absolute_monarchy
+					}
+					ruling_party_ideology = reactionary
+				}
             }
             NOT = { has_country_modifier = totalitarian_system }
         }
