@@ -207,6 +207,26 @@ fuel_refinery = {
     #strategic_factory = yes
 }
 
+synthetic_rubber_factory = {
+    type = factory
+
+    on_completion = factory
+    completion_size = 0.2
+    max_level = 99
+    goods_cost =
+    {
+        machine_parts = 300
+        steel = 200
+        cement = 200
+    }
+    time = 244
+    visibility = yes
+    onmap = no
+
+    production_type = synthetic_rubber_factory
+    pop_build_factory = yes
+}
+
 ############# NAVAL FACTORIES
 
 steamer_shipyard = {

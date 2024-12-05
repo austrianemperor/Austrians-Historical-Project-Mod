@@ -262,6 +262,7 @@ political_reforms = {
             allow = {
                 NOT = { has_country_flag = theocratic_government }
                 NOT = { has_country_flag = government_busy_with_something }
+				NOT = { has_country_flag = totalitarianism_entrenched }				
             }
         }
         wealth_weighted_voting = {
@@ -301,24 +302,28 @@ political_reforms = {
     }
 
 
-    upper_house_composition = {
-        party_appointed = {
-            rules = { same_as_ruling_party = yes }
-            ruling_party_support = 0.05
-            allow = {
-                NOT = { has_country_flag = government_busy_with_something }
-                NOT = {
-                    has_country_flag = absolute_monarchy_gov
-                    has_country_flag = semi_constitutional_monarchy_gov
-                    has_country_flag = constitutional_monarchy_gov
-                }
-            }
-        }
+	upper_house_composition = {
+		party_appointed = {
+			rules = { same_as_ruling_party = yes }
+			ruling_party_support = 0.05
+			allow = {
+				NOT = { has_country_flag = government_busy_with_something }
+				OR = { 
+					NOT = {
+						has_country_flag = absolute_monarchy_gov
+						has_country_flag = semi_constitutional_monarchy_gov 
+						has_country_flag = constitutional_monarchy_gov 
+					}
+					has_country_flag = totalitarianism_entrenched
+				}
+			}
+		}
         appointed = {
             rules = { rich_only = yes }
             global_immigrant_attract = 0.01
             allow = {
                 NOT = { has_country_flag = government_busy_with_something }
+				NOT = { has_country_flag = totalitarianism_entrenched }
             }
         }
         state_equal_weight = {
@@ -327,6 +332,7 @@ political_reforms = {
                 NOT = { has_country_flag = government_busy_with_something }
                 NOT = { vote_franschise = none_voting }
                 NOT = { has_country_flag = theocratic_government }
+				NOT = { has_country_flag = totalitarianism_entrenched }
             }
             global_immigrant_attract = 0.03
         }
@@ -335,6 +341,7 @@ political_reforms = {
             allow = {
                 NOT = { vote_franschise = none_voting }
                 NOT = { has_country_flag = government_busy_with_something }
+				NOT = { has_country_flag = totalitarianism_entrenched }				
             }
             global_immigrant_attract = 0.03
         }
@@ -378,6 +385,7 @@ political_reforms = {
             suppression_points_modifier = -0.25
             allow = {
                 NOT = { has_country_flag = government_busy_with_something }
+				NOT = { has_country_flag = totalitarianism_entrenched }				
             }
         }
 
@@ -398,6 +406,7 @@ political_reforms = {
             global_immigrant_attract = 0.01
             allow = {
                 NOT = { has_country_flag = government_busy_with_something }
+				NOT = { has_country_flag = totalitarianism_entrenched }				
             }
         }
         free_press = {
@@ -456,6 +465,7 @@ political_reforms = {
             allow = {
                 NOT = { has_country_flag = theocratic_government }
                 NOT = { has_country_flag = government_busy_with_something }
+				NOT = { has_country_flag = totalitarianism_entrenched }				
             }
         }
         gerrymandering = {

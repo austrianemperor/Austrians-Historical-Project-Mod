@@ -604,6 +604,9 @@ country_event = {
         clr_country_flag = fascist_gov
         clr_country_flag = anarcho_liberal_gov
         remove_country_modifier = fight_the_power
+		clr_country_flag = totalitarian_government
+		remove_country_modifier = totalitarian_system
+		clr_country_flag = totalitarianism_entrenched
         government = democracy
         election = yes
         prestige_factor = -0.05
@@ -889,6 +892,9 @@ country_event = {
         clr_country_flag = presidential_dictatorship_gov
         clr_country_flag = fascist_gov
         clr_country_flag = anarcho_liberal_gov
+		clr_country_flag = totalitarian_government
+		remove_country_modifier = totalitarian_system
+		clr_country_flag = totalitarianism_entrenched
         #Genocide Cleanup
         ##Set Up Timer based on time the thing ran
         random_owned = {

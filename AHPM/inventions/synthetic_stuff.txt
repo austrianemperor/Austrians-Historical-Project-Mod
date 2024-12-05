@@ -1,0 +1,36 @@
+#Studies published in 1930 written independently by Lebedev, the American Wallace Carothers and the German scientist Hermann Staudinger led in 1931 to one of the first successful synthetic rubbers, known as neoprene
+synthetic_rubber = {
+    limit = { synthetic_polymers = 1 }
+    chance = {
+        base = 2
+        modifier = {
+            factor = 2
+            invention = rayon
+        }
+    }
+    effect = {
+        activate_building = synthetic_rubber_factory
+    }
+}
+
+frasch_process = {
+    limit = { combustion_engine = 1 }
+	chance = {
+        base = 2
+        modifier = {
+			factor = 2
+			electricity = 1
+		}
+		modifier = {
+			factor = 2
+			electrical_power_generation = 1
+		}
+	}
+	effect = {
+		rgo_goods_output = {
+			sulphur = 1
+		}
+	}
+}
+
+

@@ -1788,6 +1788,9 @@ country_event = {
                 clr_country_flag = communist_party_in_power
                 clr_country_flag = fascist_party_in_power
                 clr_country_flag = anarcho_liberal_party_in_power
+				clr_country_flag = totalitarian_government
+				remove_country_modifier = totalitarian_system
+				clr_country_flag = totalitarianism_entrenched
 
                 add_country_modifier = {
                     name = national_confusion
@@ -1827,6 +1830,9 @@ country_event = {
                 clr_country_flag = communist_party_in_power
                 clr_country_flag = fascist_party_in_power
                 clr_country_flag = anarcho_liberal_party_in_power
+				clr_country_flag = totalitarian_government
+				remove_country_modifier = totalitarian_system
+				clr_country_flag = totalitarianism_entrenched
 
                 add_country_modifier = {
                     name = national_confusion
@@ -1942,6 +1948,9 @@ country_event = {
             }
             owner = {
                 government = democracy
+				clr_country_flag = totalitarian_government
+				remove_country_modifier = totalitarian_system
+				clr_country_flag = totalitarianism_entrenched
                 random_owned = {
                     limit = {
                         owner = { NOT = { vote_franschise = universal_voting } }
@@ -2003,6 +2012,9 @@ country_event = {
                 clr_country_flag = communist_party_in_power
                 clr_country_flag = fascist_party_in_power
                 clr_country_flag = anarcho_liberal_party_in_power
+				clr_country_flag = totalitarian_government
+				remove_country_modifier = totalitarian_system
+				clr_country_flag = totalitarianism_entrenched
 
                 add_country_modifier = {
                     name = national_confusion
