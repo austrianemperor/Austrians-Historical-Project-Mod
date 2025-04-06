@@ -226,6 +226,26 @@ political_decisions = {
 
         ai_will_do = { factor = 0 }
     }
+	
+##Disable Army Mutinies
+disable_army_mutinies = {
+		alert = no
+		potential = {	
+		    ai = no
+		    has_country_flag = country_looking_through_options
+			NOT = { has_country_flag = no_mutiny }
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			set_country_flag = no_mutiny
+			prestige = -1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
 ###Disable Starting Party Loyalty
 

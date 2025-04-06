@@ -989,7 +989,11 @@ political_decisions = {
             remove_country_modifier = political_education
             remove_country_modifier = cult_of_personality
             remove_country_modifier = the_terror
-			upper_house_composition = party_appointed
+			political_reform = none_voting
+			political_reform = party_appointed
+			political_reform = no_meeting
+			political_reform = state_press
+			political_reform = underground_parties
         }
 
         ai_will_do = { factor = 1 }

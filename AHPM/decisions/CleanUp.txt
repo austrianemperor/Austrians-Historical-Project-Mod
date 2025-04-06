@@ -2021,6 +2021,8 @@ political_decisions = {
                     NOT = {
                         government = fascist_dictatorship
                         government = proletarian_dictatorship
+						government = absolute_monarchy
+						government = presidential_dictatorship
                     }
                     OR = {
                         has_country_modifier = totalitarian_system

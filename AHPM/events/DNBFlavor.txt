@@ -52,6 +52,10 @@ country_event = {
         war = no
         has_country_flag = danube_proposal_in_progress
         is_possible_vassal = HUN
+        any_state = {
+            any_owned_province = { is_core = HUN }
+            average_militancy = 2
+        }
         NOT = {
             HUN = { exists = yes }
             has_global_flag = full_hungarian_approval
@@ -127,6 +131,10 @@ country_event = {
         tag = KUK
         war = no
         has_country_flag = danube_proposal_in_progress
+        any_state = {
+            any_owned_province = { is_core = HUN }
+            average_militancy = 3
+        }		
         NOT = {
             has_global_flag = full_hungarian_approval
             has_global_flag = partial_hungarian_approval
@@ -245,6 +253,10 @@ country_event = {
         has_country_flag = danube_proposal_in_progress
         any_owned_province = { is_core = BOH }
         is_possible_vassal = BOH
+        any_state = {
+            any_owned_province = { is_core = BOH }
+            average_militancy = 2
+        }
         OR = {
             has_global_flag = full_hungarian_approval
             has_global_flag = partial_hungarian_approval
@@ -329,7 +341,10 @@ country_event = {
         tag = KUK
         war = no
         has_country_flag = danube_proposal_in_progress
-        any_owned_province = { is_core = BOH }
+        any_state = {
+            any_owned_province = { is_core = BOH }
+            average_militancy = 3
+        }
         OR = {
             has_global_flag = full_hungarian_approval
             has_global_flag = partial_hungarian_approval
@@ -453,6 +468,10 @@ country_event = {
         has_country_flag = danube_proposal_in_progress
         any_owned_province = { is_core = SIE }
         is_possible_vassal = SIE
+        any_state = {
+            any_owned_province = { is_core = ROM }
+            average_militancy = 2
+        }
         OR = {
             has_global_flag = full_hungarian_approval
             has_global_flag = partial_hungarian_approval
@@ -537,7 +556,10 @@ country_event = {
         tag = KUK
         war = no
         has_country_flag = danube_proposal_in_progress
-        any_owned_province = { is_core = ROM }
+        any_state = {
+            any_owned_province = { is_core = ROM }
+            average_militancy = 3
+        }
         OR = {
             has_global_flag = full_hungarian_approval
             has_global_flag = partial_hungarian_approval
@@ -661,6 +683,10 @@ country_event = {
         has_country_flag = danube_proposal_in_progress
         any_owned_province = { is_core = CRO }
         is_possible_vassal = CRO
+        any_state = {
+            any_owned_province = { is_core = CRO }
+            average_militancy = 2
+        }
         OR = {
             has_global_flag = full_hungarian_approval
             has_global_flag = partial_hungarian_approval
@@ -745,7 +771,10 @@ country_event = {
         tag = KUK
         war = no
         has_country_flag = danube_proposal_in_progress
-        any_owned_province = { is_core = CRO }
+        any_state = {
+            any_owned_province = { is_core = CRO }
+            average_militancy = 3
+        }
         OR = {
             has_global_flag = full_hungarian_approval
             has_global_flag = partial_hungarian_approval
@@ -869,6 +898,10 @@ country_event = {
         has_country_flag = danube_proposal_in_progress
         any_owned_province = { is_core = SLO }
         is_possible_vassal = SLO
+        any_state = {
+            any_owned_province = { is_core = SLO }
+            average_militancy = 2
+        }
         OR = {
             has_global_flag = full_hungarian_approval
             has_global_flag = partial_hungarian_approval
@@ -953,7 +986,10 @@ country_event = {
         tag = KUK
         war = no
         has_country_flag = danube_proposal_in_progress
-        any_owned_province = { is_core = SLO }
+        any_state = {
+            any_owned_province = { is_core = SLO }
+            average_militancy = 3
+        }
         OR = {
             has_global_flag = full_hungarian_approval
             has_global_flag = partial_hungarian_approval
@@ -1073,6 +1109,10 @@ country_event = {
         has_country_flag = danube_proposal_in_progress
         any_owned_province = { is_core = SLV }
         is_possible_vassal = SLV
+        any_state = {
+            any_owned_province = { is_core = SLV }
+            average_militancy = 2
+        }
         OR = {
             has_global_flag = full_hungarian_approval
             has_global_flag = partial_hungarian_approval
@@ -1153,7 +1193,10 @@ country_event = {
         tag = KUK
         war = no
         has_country_flag = danube_proposal_in_progress
-        any_owned_province = { is_core = SLV }
+		any_state = {
+            any_owned_province = { is_core = SLV }
+            average_militancy = 3
+        }
         OR = {
             has_global_flag = full_hungarian_approval
             has_global_flag = partial_hungarian_approval
@@ -1277,6 +1320,10 @@ country_event = {
         has_country_flag = danube_proposal_in_progress
         any_owned_province = { is_core = GLM }
         is_possible_vassal = GLM
+        any_state = {
+            any_owned_province = { is_core = POL }
+            average_militancy = 2
+        }
         OR = {
             has_global_flag = full_hungarian_approval
             has_global_flag = partial_hungarian_approval
@@ -1362,7 +1409,10 @@ country_event = {
         tag = KUK
         war = no
         has_country_flag = danube_proposal_in_progress
-        any_owned_province = { is_core = POL }
+		any_state = {
+            any_owned_province = { is_core = POL }
+            average_militancy = 3
+        }
         OR = {
             has_global_flag = full_hungarian_approval
             has_global_flag = partial_hungarian_approval

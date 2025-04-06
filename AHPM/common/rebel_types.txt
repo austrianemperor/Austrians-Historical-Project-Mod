@@ -101,6 +101,12 @@ reactionary_rebels = {
             factor = 0
             type = slaves
         }
+		
+		modifier = {
+			factor = 0
+			type = soldiers
+			country = { has_country_flag = no_mutiny }
+		}
 
         modifier = {
             factor = 1.0115
@@ -409,6 +415,12 @@ fascist_rebels = {
             factor = 0
             type = slaves
         }
+		
+		modifier = {
+			factor = 0
+			type = soldiers
+			country = { has_country_flag = no_mutiny }
+		}
 
         modifier = {
             factor = 0
@@ -679,6 +691,12 @@ communist_rebels = {
             factor = 0
             type = slaves
         }
+		
+		modifier = {
+			factor = 0
+			type = soldiers
+			country = { has_country_flag = no_mutiny }
+		}
 
         modifier = {
             factor = 0
@@ -970,6 +988,13 @@ anarcho_liberal_rebels = {
             factor = 0
             type = slaves
         }
+		
+		modifier = {
+			factor = 0
+			type = soldiers
+			country = { has_country_flag = no_mutiny }
+		}
+		
         modifier = {
             factor = 0
             country = { civilized = no }
@@ -1293,6 +1318,12 @@ nationalist_rebels = {
             factor = 0
             type = slaves
         }
+		
+		modifier = {
+			factor = 0
+			type = soldiers
+			country = { has_country_flag = no_mutiny }
+		}
 
         modifier = {
             factor = 0.01
@@ -1590,6 +1621,12 @@ pan_nationalist_rebels = {
             factor = 0
             type = slaves
         }
+		
+		modifier = {
+			factor = 0
+			type = soldiers
+			country = { has_country_flag = no_mutiny }
+		}
 
         modifier = {
             factor = 0
@@ -1987,6 +2024,12 @@ carlist_rebels = {
             factor = 0
             type = slaves
         }
+		
+		modifier = {
+			factor = 0
+			type = soldiers
+			country = { has_country_flag = no_mutiny }
+		}
 
         modifier = {
             factor = 0
@@ -2236,6 +2279,12 @@ christino_rebels = {
             factor = 0
             type = slaves
         }
+		
+		modifier = {
+			factor = 0
+			type = soldiers
+			country = { has_country_flag = no_mutiny }
+		}
 
         modifier = {
             factor = 0
@@ -2502,6 +2551,12 @@ boxer_rebels = {
             factor = 0
             type = slaves
         }
+		
+		modifier = {
+			factor = 0
+			type = soldiers
+			country = { has_country_flag = no_mutiny }
+		}
 
         modifier = {
             factor = 0
@@ -2758,6 +2813,12 @@ red_shirts = {
             factor = 0
             type = slaves
         }
+		
+		modifier = {
+			factor = 0
+			type = soldiers
+			country = { has_country_flag = no_mutiny }
+		}
 
         modifier = {
             factor = 0
@@ -2996,6 +3057,12 @@ indian_sepoys = {
             factor = 0
             type = slaves
         }
+		
+		modifier = {
+			factor = 0
+			type = soldiers
+			country = { has_country_flag = no_mutiny }
+		}
 
         modifier = {
             factor = 0
@@ -3283,6 +3350,12 @@ indian_nationalists = {
             factor = 0
             type = slaves
         }
+		
+		modifier = {
+			factor = 0
+			type = soldiers
+			country = { has_country_flag = no_mutiny }
+		}
 
         modifier = {
             factor = 0
@@ -3487,6 +3560,12 @@ liberal_rebels = {
             factor = 0
             type = slaves
         }
+		
+		modifier = {
+			factor = 0
+			type = soldiers
+			country = { has_country_flag = no_mutiny }
+		}
 
         modifier = {
             factor = 2
@@ -3967,6 +4046,12 @@ unciv_reactionary_rebels = {
             factor = 0
             type = slaves
         }
+		
+		modifier = {
+			factor = 0
+			type = soldiers
+			country = { has_country_flag = no_mutiny }
+		}
 
         modifier = {
             factor = 0
@@ -4204,6 +4289,12 @@ separatist_rebels = {
             factor = 0
             type = slaves
         }
+		
+		modifier = {
+			factor = 0
+			type = soldiers
+			country = { has_country_flag = no_mutiny }
+		}
 
         modifier = {
             factor = 0
@@ -4459,6 +4550,12 @@ socialist_rebels = {
             factor = 0
             type = slaves
         }
+		
+		modifier = {
+			factor = 0
+			type = soldiers
+			country = { has_country_flag = no_mutiny }
+		}
 
         modifier = {
             factor = 0
@@ -4942,6 +5039,12 @@ independence_rebels = {
             factor = 0
             type = slaves
         }
+		
+		modifier = {
+			factor = 0
+			type = soldiers
+			country = { has_country_flag = no_mutiny }
+		}
 
         modifier = {
             factor = 0
@@ -5109,6 +5212,12 @@ turkish_nationalist_rebels = {
             factor = 0
             type = slaves
         }
+		
+		modifier = {
+			factor = 0
+			type = soldiers
+			country = { has_country_flag = no_mutiny }
+		}
 
         modifier = {
             factor = 0
@@ -5357,6 +5466,12 @@ native_rebels = {
             factor = 0
             type = slaves
         }
+		
+		modifier = {
+			factor = 0
+			type = soldiers
+			country = { has_country_flag = no_mutiny }
+		}
 
         modifier = {
             factor = 0
@@ -5801,6 +5916,13 @@ slave_revolt = {
                 NOT = { is_culture_group = african_diaspora_cultures }
             }
         }
+		
+		modifier = {
+			factor = 0
+			type = soldiers
+			country = { has_country_flag = no_mutiny }
+		}
+		
         modifier = {
             factor = 0
             country = {
@@ -5825,6 +5947,7 @@ slave_revolt = {
             factor = 0.25
             not = { has_pop_type = slaves }
         }
+		
         modifier = {
             factor = 0.001
             controlled_by = REB
@@ -5970,6 +6093,13 @@ partisan_rebels = {
             factor = 0
             type = slaves
         }
+		
+		modifier = {
+			factor = 0
+			type = soldiers
+			country = { has_country_flag = no_mutiny }
+		}
+		
         #Only show up in provs controlled by foreigners and during a war
         modifier = {
             factor = 0

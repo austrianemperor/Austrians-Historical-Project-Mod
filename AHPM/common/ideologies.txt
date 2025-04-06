@@ -446,7 +446,7 @@ liberal_group = {
         uncivilized = no
 
         add_political_reform = {
-            base = 0
+            base = 1
         }
         remove_political_reform = {
             base = 0

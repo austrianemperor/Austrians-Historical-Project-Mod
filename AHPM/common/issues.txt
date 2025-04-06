@@ -593,7 +593,7 @@ political_reforms = {
         debt_law = {
         next_step_only = yes
         serfdom = {
-            education_efficiency_modifier = -0.15
+            education_efficiency_modifier = -0.3
             poor_savings_modifier = -0.5
             global_immigrant_attract = -0.1
             tax_efficiency = 0.05
@@ -606,7 +606,7 @@ political_reforms = {
             }
         }
         peonage = {
-            education_efficiency_modifier = -0.03
+            education_efficiency_modifier = -0.05
             RGO_throughput  = 0.05
             global_immigrant_attract = -0.05
             suppression_points_modifier = 0.1

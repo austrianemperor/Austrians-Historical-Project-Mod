@@ -10,3 +10,7 @@ EVTDESC443041;The Party's grip on society is waning. Despite the best efforts of
 EVT443041OPTA;The Party paramount;;;;;;;;;;;;;
 EVT443041OPTB;The party paramount;;;;;;;;;;;;;
 totalitarianism_entrenched;Totalitarianism Entrenched;;;;;;;;;;;;;
+disable_army_mutinies_title;Disable Army Munities;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+disable_army_mutinies_desc;If you dislike the idea of your army deciding to randomly fight itself then this decision should make it impossible for Soldiers to ever take part in a Munity or Uprising of any type. Be aware that you can still have Munities in Conscripted Pops as they are not Soldiers.;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+russian_population_boom_title;Russian Population Boom;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+russian_population_boom_desc;The Russian Empire experienced massive population growth in the lead-up to the First World War that far exceeded that of its European neighbors, giving it a major manpower advantage against its enemies. However, in this same time period, efforts to educate the population and raise literacy levels were weak and lackluster, causing Russia to fall behind its neighbors both economically and technologically.;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
