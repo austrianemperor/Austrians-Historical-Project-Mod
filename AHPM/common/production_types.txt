@@ -282,6 +282,22 @@ synthetic_oil_factory = {
     }
 }
 
+############# EEM FACTORIES
+
+synthetic_rubber_factory = {
+    template = factory_template
+    input_goods = {
+        fuel = 1        #25    total input+maint = 34.825
+    }
+    output_goods = rubber
+    value = 4.5 #5            #31.5 - profit = -3.325
+    bonus = {
+        trigger = { has_building = fuel_refinery }
+        value = 0.25
+    }
+}
+
+
 ############# ADVANCED FACTORIES
 
 fuel_refinery = {

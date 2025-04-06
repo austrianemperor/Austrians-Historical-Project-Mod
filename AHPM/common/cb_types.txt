@@ -6839,7 +6839,7 @@ establish_protectorate_casus_belli = {
                 }
             }
             AND = {
-                NOT = { total_pops = 3000000 }
+                NOT = { total_pops = 10000000 }
                 THIS = {
                     bolt_action_rifles = 1
                     army_risk_management = 1
@@ -6857,7 +6857,7 @@ establish_protectorate_casus_belli = {
                 }
             }
             AND = {
-                total_pops = 3000000
+                total_pops = 10000000
                 THIS = {
                     modern_divisional_structure = 1
                     army_nco_training = 1

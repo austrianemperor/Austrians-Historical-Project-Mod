@@ -1,0 +1,66 @@
+# Fate of the Totalitarian System
+country_event = {
+	id = 443041
+	title = "EVTNAME443041"
+    desc = "EVTDESC443041"
+	fire_only_once = yes
+	picture = "fascist_march"
+	
+	trigger = {
+        has_country_flag = totalitarian_government
+        OR = {
+			OR = {
+				upper_house_composition = party_appointed
+				vote_franschise = none_voting
+				political_parties = underground_parties
+				press_rights = state_press
+			}
+			OR = {
+				average_militancy = 3
+				average_consciousness = 3
+			}
+        }
+    }
+
+    mean_time_to_happen = {
+        months = 12
+        modifier = {
+            factor = .5
+            average_militancy = 3
+        }
+        modifier = {
+            factor = .5
+            average_consciousness = 3
+        }
+    }
+	
+	option = {
+        name = "EVT443041OPTA"
+		
+		political_reform = none_voting
+		political_reform = party_appointed
+		political_reform = no_meeting
+		political_reform = state_press
+		political_reform = underground_parties
+		any_pop = {
+			consciousness = -3
+		}
+		
+        set_country_flag = totalitarianism_entrenched
+		ai_chance = {
+            factor = 80
+        }
+	}
+	
+	option = {
+        name = "EVT443041OPTB"
+		
+		political_reform = appointed
+		political_reform = yes_meeting
+		any_pop = {
+			militancy = -3
+		}
+		ai_chance = {
+            factor = 20
+        }
+	}

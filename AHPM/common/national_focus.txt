@@ -285,9 +285,9 @@ promotion_focus = {
 
 production_focus = {
     automation_focus = {
-        aeroplanes = 50
-        barrels = 50
-        automobiles = 50
+        aeroplanes = 500
+        barrels = 500
+        automobiles = 500
         icon = 22
         limit = {
             year = 1880
@@ -300,9 +300,9 @@ production_focus = {
     }
 
     electrical_focus = {
-        radio = 50
-        telephones = 50
-        electric_gear = 50
+        radio = 500
+        telephones = 500
+        electric_gear = 500
         icon = 23
         limit = {
             year = 1880
@@ -315,8 +315,8 @@ production_focus = {
     }
 
     chemical_focus = {
-        fuel = 50
-        oil = 50
+        fuel = 500
+        oil = 500
         icon = 24
         limit = {
             year = 1880
@@ -329,8 +329,8 @@ production_focus = {
     }
 
     shipping_focus = {
-        steamer_convoy = 50
-        clipper_convoy = 50
+        steamer_convoy = 500
+        clipper_convoy = 500
         icon = 25
         limit = {
             #civilized = yes
@@ -343,10 +343,10 @@ production_focus = {
     }
 
     textile_focus = {
-        luxury_clothes = 60
-        regular_clothes = 40
-        fabric = 15
-        dye = 15
+        luxury_clothes = 600
+        regular_clothes = 400
+        fabric = 150
+        dye = 150
         icon = 26
         limit = {
             #civilized = yes
@@ -358,10 +358,10 @@ production_focus = {
     }
 
     wood_focus = {
-        paper = 40
-        luxury_furniture = 60
-        furniture = 40
-        lumber = 40
+        paper = 400
+        luxury_furniture = 600
+        furniture = 400
+        lumber = 400
         icon = 27
         limit = {
         #    civilized = yes
@@ -373,9 +373,9 @@ production_focus = {
     }
 
     basic_industry_focus = {
-        steel = 50
-        machine_parts = 60
-        cement = 50
+        steel = 500
+        machine_parts = 600
+        cement = 500
         icon = 28
         limit = {
         #    civilized = yes
@@ -387,12 +387,12 @@ production_focus = {
     }
 
     armaments_focus = {
-        artillery = 40
-        small_arms = 40
-        ammunition = 40
-        canned_food = 40
-        explosives = 40
-        fertilizer = 40
+        artillery = 400
+        small_arms = 400
+        ammunition = 400
+        canned_food = 400
+        explosives = 400
+        fertilizer = 400
         icon = 29
         limit = {
         #    civilized = yes
@@ -404,9 +404,9 @@ production_focus = {
     }
 
     consumer_focus = {
-        liquor = 60
-        wine = 50
-        glass = 50
+        liquor = 600
+        wine = 500
+        glass = 500
         icon = 30
         limit = {
         #    civilized = yes
@@ -417,7 +417,7 @@ production_focus = {
         }
     }
     encourage_rail = {
-        railroads = 0.75 #Capitalists 50% more likely to choose railroads
+        railroads = 1.00 #Capitalists 100% more likely to choose railroads
         icon = 31
         limit = {
             owner = { ai = no }

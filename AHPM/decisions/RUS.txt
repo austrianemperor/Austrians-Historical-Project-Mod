@@ -109,6 +109,26 @@ political_decisions = {
         }
     }
 
+	 russian_population_boom = {
+        potential = {
+            tag = RUS
+            political_reform = serfdom
+            NOT = { has_country_flag = population_boom }
+        }
+
+        allow = { year = 1850 }
+
+        effect = {
+             add_country_modifier = {
+                name = uneducated_population_boom
+                duration = 10950
+            }
+			set_country_flag = population_boom
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
     manifesto_on_unshakable_autocracy = {
         potential = {
             tag = RUS
